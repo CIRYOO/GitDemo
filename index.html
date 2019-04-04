@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var ArraColor = new Array("red","blue","green","white","orange","black","");
+			var n =0;
+			function a(){
+				var sum = Math.random();
+				n++;
+				if(n==(ArraColor.length-1))n=0;
+				document.bgColor = ArraColor[n];
+				document.fgColor = ArraColor[n-1];
+				setTimeout("a()",sum*500);
+			}
+			a();
+		</script>
+	</body>
+</html>
